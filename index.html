@@ -98,8 +98,8 @@ button.big{width:100%;font-size:1.1rem;background:var(--accent2);color:#3a2b1e}
 
 <div class="modal hidden" id="modal">
   <div class="card">
-    <h2 id="pinTitle">Validation par un proche</h2>
-    <p class="empty">Un parent, un conjoint ou un ami entre le code pour valider la journée.</p>
+    <h2 id="pinTitle">Validation</h2>
+    <p class="empty">Anaïs entre le code pour valider la journée</p>
     <div class="row"><input id="pin" type="password" inputmode="numeric" placeholder="Code" autocomplete="new-password"></div>
     <div class="toast" id="pinMsg"></div>
     <div class="row"><button id="pinOk">Valider</button><button class="sec" id="pinNo">Plus tard</button></div>
@@ -109,7 +109,7 @@ button.big{width:100%;font-size:1.1rem;background:var(--accent2);color:#3a2b1e}
 <script>
 const DAY=864e5;
 const PILLARS=[["🌿","Gestion des émotions"],["🌙","Sommeil"],["🍎","Alimentation"],["👟","Activité physique"]];
-const DEFAULTS=[["Respirer 1 minute"],["Poser le téléphone avant de dormir"],["Boire un verre d’eau"],["Marcher 5 minutes"]];
+const DEFAULTS=[["1 cohérence cardiaque par jour"],["Eteindre tous les écrans à 22H30"],["Déguster 1 légume par jour"],["Prendre les escaliers 1 fois sur 2"]];
 const STAGES=[
  ["Le point de départ","Ton personnage enfile sa tenue. Un petit pas suffit."],
  ["L’ambulance","Le moteur ronronne : c’est parti !"],
@@ -226,7 +226,7 @@ function render(){
 
 function toggle(id,v){
   if(v){S.checks[id]=true;S.last=Date.now();
-    const [t,d]=totals();toast(d===t?"Tout est fait ! Un proche peut valider.":"Super, une de plus ✔")}
+    const [t,d]=totals();toast(d===t?"Tout est fait ! Anaïs peut valider.":"Super, une de plus ✔")}
   else delete S.checks[id];
   save();render();
 }
@@ -349,7 +349,7 @@ let pinMode="validate";
 function askPin(m){
   pinMode=m;const c=m==="config";
   $("pinTitle").textContent=c?"Admin":"Validation par un proche";
-  $("modal").querySelector("p").textContent=c?"Réservé à un parent, un conjoint ou un ami : entre le code pour accéder aux réglages.":"Un parent, un conjoint ou un ami entre le code pour valider la journée.";
+  $("modal").querySelector("p").textContent=c?"Réservé à l'admin : entre le code pour accéder aux réglages.":"Anaïs entre le code pour valider la journée.";
   $("pin").value="";$("pinMsg").textContent="";$("modal").classList.remove("hidden");$("pin").focus();
 }
 function openCfg(){$("cfg").classList.remove("hidden");$("cfgBtn").textContent="🔒 Verrouiller";$("cfg").scrollIntoView({behavior:"smooth"})}
