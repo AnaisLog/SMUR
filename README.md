@@ -89,10 +89,8 @@ Les données (progression, actions, humeur, to-do list, code) sont enregistrées
 4. Dans `aventure-lego.html`, modifier le bloc `FIREBASE` (au début du script) :
 
 ```js
-const FIREBASE = {
-  url: "https://smur-leila-default-rtdb.europe-west1.firebasedatabase.app/",
-  space: "17nov2026"
-};
+const FIREBASE={url:"https://smur-leila-default-rtdb.europe-west1.firebasedatabase.app/",space:"17nov2026"};
+
 ```
 
 Tant que ces valeurs ne sont pas changées, l’application fonctionne en **mode local** (l’Admin indique l’état de la synchronisation).
