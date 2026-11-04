@@ -360,8 +360,7 @@ function renderDocs(){
     list.forEach((t,i)=>{const r=el("div","li"),s=el("span","st","⬜");s.dataset.v=DEFI_V[i];r.append(s,document.createTextNode(t));b.appendChild(r)});
     const p=el("p");p.append("🏁 Progression : ");p.appendChild(el("b","prog","0"));p.append(" / "+total+" défis terminés");b.appendChild(p);
   };
-
-  box.appendChild(el("h2", "sect", "🏆 DÉFIS — PREPARATION SMUR");
+  box.appendChild(el("h2","sect","🏆 DÉFIS — PREPARATION SMUR"));
   let o=grp("suivi1","📊 SUIVI DE PROGRESSION",true);
   o.b.appendChild(el("p","","Objectif : 8 défis à réaliser"));suivi(o.b,SUIVI1,8);
 
