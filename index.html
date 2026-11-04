@@ -175,7 +175,7 @@ const dk=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+Strin
 const arr=x=>Array.isArray(x)?x.filter(v=>v!=null):Object.values(x||{});
 
 /* ───────── Contenu des défis (repris tel quel) ───────── */
-const L1="Lis la fiche et/ou la carte mentale → 4.3 Soins d'urgence > FAE module correspondant > https://alifsicrip.github.io/cours/pages/UE4/index.html";
+const L1="Lis la fiche et/ou la carte mentale → 4.3 Soins d'urgence > FAE module correspondant";
 const CACHE="Cache la page et écris tout ce dont tu te souviens.";
 const RELIS="Relis la page et repère tes oublis et tes erreurs.";
 const CACHE2="Cache à nouveau la page et complète tes réponses de mémoire.";
@@ -361,7 +361,7 @@ function renderDocs(){
     const p=el("p");p.append("🏁 Progression : ");p.appendChild(el("b","prog","0"));p.append(" / "+total+" défis terminés");b.appendChild(p);
   };
 
-  box.appendChild(el("h2","sect","🏆 DÉFIS — RÉVISION ORAL"));
+  box.appendChild(el("h2","sect","🏆 DÉFIS — PREPARATION SMUR |  https://alifsicrip.github.io/cours/pages/UE4/index.html |"));
   let o=grp("suivi1","📊 SUIVI DE PROGRESSION",true);
   o.b.appendChild(el("p","","Objectif : 8 défis à réaliser"));suivi(o.b,SUIVI1,8);
 
