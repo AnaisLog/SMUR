@@ -183,26 +183,18 @@ const JOINS="Joins et envoie la photo de ton travail pour débloquer le défi su
 const QZ=["Réponds honnêtement, sans consulter le cours.","Joins et envoie la photo de ton résultat."];
 const ACTQ="Repère tes erreurs, retrouve les bonnes réponses dans le cours et note les notions à revoir.";
 const DEFIS=[
- {ico:"🎯",t:"Défi 1 — « Module 4 »",ei:"⏱️📅 Jeudi 5 novembre",items:[L1+"4.",CACHE,RELIS,CACHE2,JOINS],a:"Identifie les 3 notions que tu maîtrises le moins et note-les pour ta prochaine révision."},
- {ico:"📝",t:"Défi 2 — « Quizz Module 4 »",ei:"📅",e:"",items:QZ,a:ACTQ},
- {ico:"🎯",t:"Défi 3 — « Module 2 »",ei:"📅",e:"à planifier — plusieurs sessions de révision",items:[L1+"2.",CACHE,RELIS,CACHE2,JOINS],a:"Répartis les notions du module en plusieurs petites sessions et révise en priorité les points oubliés."},
- {ico:"📝",t:"Défi 4 — « Quizz Module 2 »",ei:"📅",e:"à planifier après le défi 3",items:QZ,a:ACTQ},
- {ico:"🎯",t:"Défi 5 — « Module 5 & 6 »",ei:"📅",e:"à planifier",items:[L1+"5 & 6.",CACHE,RELIS,CACHE2,JOINS],a:"Liste les mots-clés, les gestes et les conduites à tenir que tu as eu du mal à restituer."},
- {ico:"📝",t:"Défi 6 — « Quizz Module 5 & 6 »",ei:"📅",e:"à planifier après le défi 5",items:QZ,a:"Corrige tes erreurs et explique à voix haute les réponses que tu avais oubliées."},
- {ico:"🎯",t:"Défi 7 — « Module Programme et différences entre Ambulancière SMUR et TS »",ei:"📅",e:"à planifier",items:[L1+"Programme et autres.",CACHE,RELIS,CACHE2,JOINS],a:"Prépare une courte présentation orale des missions et des différences entre ambulancière SMUR et ambulancière de transport sanitaire."},
- {ico:"📝",t:"Défi 8 — « Quizz Module Programme et différences entre Ambulancière SMUR et TS »",ei:"📅",e:"à planifier après le défi 7",items:QZ,a:"Explique les différences sans réciter le cours et reprends les points que tu maîtrises le moins."}
+ {ico:"🎯",t:"Défi 1 — « Module 4 »","📅 Mercredi 4 et jeudi 5 novembre",items:[L1+"4.",CACHE,RELIS,CACHE2,JOINS],a:"Identifie les 3 notions que tu maîtrises le moins et note-les pour ta prochaine révision."},
+ {ico:"📝",t:"Défi 2 — « Quizz Module 4 »",ei:"📅 Mercredi 4 et jeudi 5 novembre",items:QZ,a:ACTQ},
+ {ico:"🎯",t:"Défi 3 — « Module 2 »",ei:"📅 Vendredi 6 et samedi 7 novembre",items:[L1+"2.",CACHE,RELIS,CACHE2,JOINS],a:"Répartis les notions du module en plusieurs petites sessions et révise en priorité les points oubliés."},
+ {ico:"📝",t:"Défi 4 — « Quizz Module 2 »",ei:"📅 Dimanche 8 novembre",e:"à planifier après le défi 3",items:QZ,a:ACTQ},
+ {ico:"🎯",t:"Défi 5 — « Module 5 & 6 »",ei:"📅Lundi 9 et mardi 10 novembre",items:[L1+"5 & 6.",CACHE,RELIS,CACHE2,JOINS],a:"Liste les mots-clés, les gestes et les conduites à tenir que tu as eu du mal à restituer."},
+ {ico:"📝",t:"Défi 6 — « Quizz Module 5 & 6 »",ei:"📅 Mercredi 11 novembre",items:QZ,a:"Corrige tes erreurs et explique à voix haute les réponses que tu avais oubliées."},
+ {ico:"🎯",t:"Défi 7 — « Module Programme et différences entre Ambulancière SMUR et TS »",ei:"📅Jeudi 12 et vendredi 13 novembre",items:[L1+"Programme et autres.",CACHE,RELIS,CACHE2,JOINS],a:"Prépare une courte présentation orale des missions et des différences entre ambulancière SMUR et ambulancière de transport sanitaire."},
+ {ico:"📝",t:"Défi 8 — « Quizz Module Programme et différences entre Ambulancière SMUR et TS »",ei:"📅Jeudi 12 et vendredi 13 novembre",items:QZ,a:"Explique les différences sans réciter le cours et reprends les points que tu maîtrises le moins."}
 ];
 const SUIVI1=["Défi 1 — Module 4","Défi 2 — Quizz Module 4","Défi 3 — Module 2","Défi 4 — Quizz Module 2","Défi 5 — Module 5 & 6","Défi 6 — Quizz Module 5 & 6","Défi 7 — Programme et différences SMUR / TS","Défi 8 — Quizz Programme et différences SMUR / TS"];
 const SUIVI2=["Défi 1 — Module 4","Défi 2 — Quizz Module 4","Défi 3 — Module 2","Défi 4 — Quizz Module 2","Défi 5 — Modules 5 & 6","Défi 6 — Quizz Modules 5 & 6","Défi 7 — Programme et différences SMUR / TS","Défi 8 — Quizz Programme et différences SMUR / TS"];
 const BILAN=["Termine les 8 défis.","Envoie toutes les photos des résultats et des travaux.","Identifie les notions difficiles.","Prépare les points essentiels pour l'oral."];
-const CAL=[
- ["Jeudi 5 novembre — MODULE 4",["Défi 1 : réviser le module 4.","Défi 2 : réaliser le quiz Module 4 à 20 h."]],
- ["Vendredi 6 et samedi 7 novembre — MODULE 2",["Défi 3 : réviser le module 2."]],
- ["Dimanche 8 novembre — QUIZ MODULE 2",["Défi 4 : réaliser le quiz Module 2."]],
- ["Lundi 9 et mardi 10 novembre — MODULES 5 & 6",["Défi 5 : réviser les modules 5 & 6.","Faire le bilan à mi-parcours : progression, difficultés et priorités restantes."]],
- ["Mercredi 11 novembre — QUIZ MODULES 5 & 6",["Défi 6 : réaliser le quiz Modules 5 & 6."]],
- ["Jeudi 12 et vendredi 13 novembre — PROGRAMME ET DIFFÉRENCES SMUR / TS",["Défi 7 : réviser le programme et les différences entre ambulancière SMUR et ambulancière TS.","Défi 8 : réaliser le quiz correspondant."]]
-];
 const JOURS=[
  ["👗 SAMEDI 14 NOVEMBRE — PRÉPARATION PERSONNELLE",["Choisis ta tenue.","Essaie et prépare ta tenue.","Imprime ton dossier de candidature.","Prévois ta mise en beauté avec Nabila."]],
  ["🎤 DIMANCHE 15 NOVEMBRE — SIMULATION ORALE",["Réalise une simulation complète de présentation.","Entraîne-toi aux questions orales.","Repère les derniers points à améliorer."]],
