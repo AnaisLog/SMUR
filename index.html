@@ -361,9 +361,7 @@ function renderDocs(){
     const p=el("p");p.append("🏁 Progression : ");p.appendChild(el("b","prog","0"));p.append(" / "+total+" défis terminés");b.appendChild(p);
   };
 
-box.appendChild(
-  el("h2", "sect", "🏆 DÉFIS — PREPARATION SMUR", `<a href="https://alifsicrip.github.io/cours/pages/UE4/index.html" target="_blank" rel="noopener noreferrer"></a>`)
-);
+  box.appendChild(el("h2", "sect", `<a href="https://alifsicrip.github.io/cours/pages/UE4/index.html" target="_blank" rel="noopener noreferrer">🏆 DÉFIS — PREPARATION SMUR</a>`));
   let o=grp("suivi1","📊 SUIVI DE PROGRESSION",true);
   o.b.appendChild(el("p","","Objectif : 8 défis à réaliser"));suivi(o.b,SUIVI1,8);
 
